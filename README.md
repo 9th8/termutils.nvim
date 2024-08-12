@@ -1,11 +1,11 @@
 # termutils.nvim
 
-`fm-nvim` is a Neovim plugin that lets you use your favorite terminal utilities from within Neovim.
+`termutils` is a Neovim plugin that lets you open floating terminal and use your favorite terminal utilities from within Neovim.
 
 <details>
-<summary>Supported File Managers</summary>
+<summary>Supported utilities</summary>
 
-- [Lazygit](https://github.com/jesseduffield/lazygit)<sup>1</sup>
+- [Lazygit](https://github.com/jesseduffield/lazygit)
 - [Lf](https://github.com/gokcehan/lf)
 
 </details>
