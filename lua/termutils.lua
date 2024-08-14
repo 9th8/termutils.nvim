@@ -54,7 +54,9 @@ end
 
 function M.Lf(dir)
   temp_file = vim.fn.tempname()
-  createWin("lf", "lf -command 'set hidden' -selection-path " .. vim.fn.shellescape(temp_file) .. ' ' .. (dir or vim.fn.expand('%:p:h')))
+  local resolved_dir = vim.fn.resolve(dir or vim.fn.expand('%:p:h'))
+  createWin("lf", "lf -command 'set hidden' -selection-path " ..
+    vim.fn.shellescape(temp_file) .. ' ' .. vim.fn.shellescape(resolved_dir))
 end
 
 function M.Lazygit()
