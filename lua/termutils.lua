@@ -21,8 +21,8 @@ end
 
 local function createWin(bufname, cmd)
   M.buf = vim.api.nvim_create_buf(false, true)
-  local win_height = math.ceil(vim.fn.winheight(0) * 0.9 - 2)
-  local win_width = math.ceil(vim.fn.winwidth(0) * 0.9)
+  local win_height = vim.fn.winheight(0)
+  local win_width = vim.fn.winwidth(0)
   local opts = {
     style = "minimal",
     relative = "editor",
